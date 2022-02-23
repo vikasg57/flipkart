@@ -17,6 +17,7 @@ const watchcontroller=require("./controller/watch.controller")
 const tvcontroller=require("./controller/tv.controller")
 
 
+const port=process.env.port || 3000
 
 
 
@@ -46,9 +47,9 @@ app.use("/tv",tvcontroller)
 app.use("/watch",watchcontroller)
 
 
-app.listen(8500,async()=>{
+app.listen(port,async()=>{
 
     await connect()
-    console.log("listing on 8500")
+    console.log(`listing on ${port}`)
 
 })
