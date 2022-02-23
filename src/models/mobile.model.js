@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-const productschema=new mongoose.Schema({
+const mobileschema=new mongoose.Schema({
 
         name:{type:String,required:true},
         type: {type:String,required:true},
@@ -18,4 +18,4 @@ const productschema=new mongoose.Schema({
     versionKey:false
 })
 
-module.exports=mongoose.model("camera",productschema)
+module.exports=mongoose.model("mobile",mobileschema)
