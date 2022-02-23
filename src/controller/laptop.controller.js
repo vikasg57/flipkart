@@ -8,46 +8,8 @@ const allcontroller=require("./allcontroller")
 
 router.get("/brand",allcontroller(Laptop).brand)
 
+router.get("",allcontroller(Laptop).get)
 
-router.get("",async(req,res)=>{
-
-    try{
-
-        const product=await Laptop.find().limit(15).lean().exec()
-        
-
-        res.send(product)
-
-    }   
-    catch(er){
-        console.log(er.message)
-    }
-})
-
-router.get("/sort",async(req,res)=>{
-
-    try{
-
-        if(req.query.value==-1){
-
-                const product=await Laptop.find().sort({price:req.query.value}).limit(15).lean().exec()
-
-                   res.send(product)
-
-        }
-
-        const product=await Laptop.find().sort({price:req.query.value}).skip(15).limit(15).lean().exec()
-        
-
-        res.send(product)
-
-    }   
-    catch(er){
-        console.log(er.message)
-    }
-})
-
-
-
+router.get("/sort",allcontroller(Laptop).sort)
 
 module.exports=router
