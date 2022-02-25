@@ -6,6 +6,9 @@ const app=express()
 
 const cors=require("cors")
 
+let {register,login} = require("./controller/auth.controller");
+
+
 const productcontroller=require("./controller/camera.controller")
 
 const laptopcontroller=require("./controller/laptop.controller")
@@ -51,6 +54,11 @@ app.use("/tv",tvcontroller)
 app.use("/watch",watchcontroller)
 
 app.use("/cart",cartcontroller)
+
+
+app.post("/register", register);
+app.post("/login",login);
+
 
 app.listen(port,async()=>{
 
