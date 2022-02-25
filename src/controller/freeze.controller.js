@@ -3,7 +3,8 @@ const express=require("express")
 
 const router =express.Router()
 
-const Freeze=require("../models/freeze.model")
+const Freeze=require("../models/product.model").freeze
+
 
 const allcontroller=require("./allcontroller")
 

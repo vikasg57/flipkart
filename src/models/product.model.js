@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-const mobileschema=new mongoose.Schema({
+const productSchema=new mongoose.Schema({
 
         name:{type:String,required:true},
         type: {type:String,required:true},
@@ -18,4 +18,12 @@ const mobileschema=new mongoose.Schema({
     versionKey:false
 })
 
-module.exports=mongoose.model("mobile",mobileschema)
+module.exports={
+    camera: mongoose.model("camera",productSchema),
+    freeze:mongoose.model("freeze",productSchema),
+    laptop:mongoose.model("laptop",productSchema),
+    tv:mongoose.model("tv",productSchema),
+    watch:mongoose.model("watch",productSchema),
+    mobile:mongoose.model("mobile",productSchema),
+    cart:mongoose.model("cart",productSchema)
+}

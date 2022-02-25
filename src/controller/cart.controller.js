@@ -2,7 +2,7 @@ const express=require("express")
 
 const router=express.Router()
 
-const Cart=require("../models/cart.model")
+const Cart=require("../models/product.model").cart
 
 router.post("",async(req,res)=>{
 

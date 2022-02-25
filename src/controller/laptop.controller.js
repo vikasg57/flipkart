@@ -2,7 +2,7 @@ const express=require("express")
 
 const router =express.Router()
 
-const Laptop=require("../models/laptop.model")
+const Laptop=require("../models/product.model").laptop
 
 const allcontroller=require("./allcontroller")
 

@@ -1,6 +1,7 @@
 const express=require("express")
 
-const Product=require("../models/camera.model")
+const Product=require("../models/product.model").camera
+
 
 const router=express.Router()
 
