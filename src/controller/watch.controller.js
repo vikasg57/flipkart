@@ -2,7 +2,7 @@ const express=require("express")
 
 const router =express.Router()
 
-const watch=require("../models/watch.model")
+const watch=require("../models/product.model").watch
 
 
 const allcontroller=require("./allcontroller")

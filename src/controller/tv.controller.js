@@ -2,7 +2,7 @@ const express=require("express")
 
 const router =express.Router()
 
-const tv=require("../models/tv.model")
+const tv=require("../models/product.model").tv
 
 
 const allcontroller=require("./allcontroller")

@@ -2,7 +2,7 @@ const express=require("express")
 
 const router =express.Router()
 
-const mobile=require("../models/mobile.model")
+const mobile=require("../models/product.model").mobile
 
 
 const allcontroller=require("./allcontroller")
