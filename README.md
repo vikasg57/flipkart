@@ -14,7 +14,7 @@ DATA[LINK](https://flipkart-backendserver.herokuapp.com/freeze)<br/>
 SORTING[ASCENDING](https://flipkart-backendserver.herokuapp.com/freeze/sort?value=-1)<br/>
 SORTING[DESCENDING](https://flipkart-backendserver.herokuapp.com/freeze/sort?value=1)<br/>
 FILTER[Samsung(freeze)](https://flipkart-backendserver.herokuapp.com/freeze/brand?brand=Samsung)<br/>
-FILTER[DEell(laptop)](https://flipkart-backendserver.herokuapp.com/freeze/brand?brand=Dell)<br/>
+FILTER[Dell(laptop)](https://flipkart-backendserver.herokuapp.com/freeze/brand?brand=Dell)<br/>
 MULTIPLE BRAND FILTER[Samsung and GE](https://flipkart-backendserver.herokuapp.com/freeze/brand?brand=Samsung&brand=GE)
 
 
