@@ -10,7 +10,7 @@ this API contain some data from best besttbuy API.
 <li>ExpressJS</li>
 <li>MongoDB</li>
 
-##ENDPOINTS
+## ENDPOINTS
 
 currently this API support some endpoint like for sorting and filtering according to specific brand,we will currently working on it in future it will support mu;tiple endpoints
 
